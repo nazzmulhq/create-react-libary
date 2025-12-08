@@ -1,71 +1,65 @@
-# My React Library 📦
+# create-react-libary 🚀
 
-A modern React 19 component library built with Vite + TypeScript.
+Create a modern React component library with Vite + TypeScript in seconds!
 
-## 📁 Clean Project Structure
+## Usage
 
-```
-my-react-library/
-├── lib/                 # 📚 Your library source code
-│   ├── components/      # React components
-│   │   ├── Button/
-│   │   └── Card/
-│   ├── hooks/           # Custom hooks
-│   ├── utils/           # Utilities
-│   └── main.ts          # Entry point
-├── example/             # 🧪 Test app (simulates user install)
-│   └── src/App.tsx
-├── dist/                # 📦 Built output (auto-generated)
-├── vite.config.ts       # Build config
-└── package.json
-```
-
----
-
-## 🚀 How to Run (Two Terminals)
-
-### **Terminal 1: Library Compiler**
 ```bash
-cd /home/nazmul/Desktop/react-frontend-libary-maker
+npx create-react-libary
+```
+
+Or with a project name:
+
+```bash
+npx create-react-libary my-awesome-lib
+```
+
+## What You Get
+
+- ⚡ **Vite** - Lightning-fast builds
+- 🔷 **TypeScript** - Full type support with `.d.ts` generation
+- ⚛️ **React 19** - Latest React support
+- 📦 **Multiple formats** - ESM, CJS, UMD
+- 🎨 **CSS bundled** - Styles included
+- 🧪 **Example app** - Test your library like a real user
+
+## After Creation
+
+### Terminal 1: Compile library
+```bash
+cd my-awesome-lib
+npm install
 npm run build:watch
 ```
-Watches `lib/` and rebuilds on every change.
 
-### **Terminal 2: Example App**
+### Terminal 2: Run example app
 ```bash
-cd /home/nazmul/Desktop/react-frontend-libary-maker/example
+cd my-awesome-lib/example
+npm install
 npm run dev
 ```
-Opens at **http://localhost:3001** - uses your library like a real user!
 
----
+Opens at **http://localhost:3001**
 
-## 🔄 Development Workflow
+## Project Structure
 
-1. **Edit** files in `lib/` (e.g., Button.tsx)
-2. **Terminal 1** auto-rebuilds → see "built in Xms"
-3. **Refresh** browser at localhost:3001
-
----
-
-## 📦 For Users Installing Your Library
-
-```tsx
-import { Button, Card } from 'my-react-library';
-import 'my-react-library/styles';
-
-function App() {
-  return <Button variant="primary">Click Me</Button>;
-}
+```
+my-awesome-lib/
+├── lib/           # Your library source code
+│   ├── components/
+│   ├── hooks/
+│   └── main.ts
+├── example/       # Test app (like user's project)
+└── dist/          # Built output
 ```
 
----
+## Publishing
 
-## 🛠️ Scripts
+```bash
+npm run build
+npm publish
+```
 
-| Command | Description |
-|---------|-------------|
-| `npm run build` | Build library once |
-| `npm run build:watch` | Watch mode (auto-rebuild) |
-| `npm run lint` | Run ESLint |
-| `npm run typecheck` | TypeScript check |
+## License
+
+MIT
