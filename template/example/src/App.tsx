@@ -2,7 +2,6 @@
 // import { Button, Card, ... } from 'my-react-library'
 
 import { Button, Card, CardContent, CardFooter, CardHeader, useToggle } from 'my-react-library';
-import 'my-react-library/styles';
 import './App.css';
 
 function App() {
