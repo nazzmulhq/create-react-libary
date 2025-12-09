@@ -1,6 +1,6 @@
 {
   "name": "create-react-libary",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Create a modern React component library with Vite + TypeScript",
   "bin": {
     "create-react-libary": "./bin/cli.js"
